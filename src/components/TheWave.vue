@@ -1,6 +1,5 @@
 <template>
   <div class="animation-container">
-    <button @click="animateWaves">waverino</button>
     <div class="wave four">
       <SvgLoader svg="wave-four"/>
       <div class="fill-spacer"></div>
@@ -41,13 +40,6 @@
       <div class="fill-spacer"></div>
       <div class="fill"></div>
     </div>
-    <!-- <div class="wave one"></div> -->
-    <!-- <div class="animationcont">
-        <svg class="one" viewBox="0 0 100 25">
-          <path fill="#9EAFFD" opacity="0.5" d="M0 30 V15 Q30 3 60 15 V30z"></path>
-          <path fill="#9EAFFD" d="M0 30 V12 Q30 17 55 12 T100 11 V30z"></path>
-        </svg>
-    </div>-->
   </div>
 </template>
 
@@ -56,40 +48,19 @@ import SvgLoader from "@/components/SvgLoader";
 
 export default {
   name: "TheWave",
-  props: {
-    msg: String
-  },
+  props: {},
   components: {
     SvgLoader
   },
   data: () => {
-    return {
-      width: 500
-    };
+    return {};
   },
   mounted() {
     this.animateWaves();
   },
   methods: {
-    animate() {
-      console.log("Here");
-      anime({
-        targets: ".bar2",
-        duration: 1500,
-        // easing: 'easeInSine',
-        elasticity: 400,
-        width: this.width
-      });
-    },
     animateWaves() {
       this.waveOne();
-      // anime({
-      //   targets: ".wave",
-      //   duration: 1500,
-      //   // easing: 'easeInSine',
-      //   elasticity: 400,
-      //   width: this.width
-      // });
     },
     waveOne() {
       anime({
@@ -237,7 +208,6 @@ $waveFourFill: #448dad;
   background: #000;
   width: 100%;
   flex-grow: 1;
-  // padding-bottom: 20%;
   height: auto;
 }
 .svg-wave {

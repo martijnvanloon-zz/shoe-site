@@ -1,7 +1,7 @@
 
 <template>
   <div :style="{ color: code }" class="label">
-    <input class="radio" :id="name" type="radio" name="selector">
+    <input checked class="radio" :id="name" type="radio" name="selector">
     <label class="radio-label" :for="name">{{name}}</label>
     <div class="check"></div>
   </div>
@@ -28,7 +28,7 @@ export default {
 .price-container {
   display: flex;
   width: 100%;
-  font-size: 0.667em;
+  font-size: 1em;
 }
 .radio {
   position: absolute;

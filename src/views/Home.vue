@@ -213,11 +213,24 @@ body {
 }
 
 .ye {
-  img {
-    width: 200px;
-  }
-}
+  font-size: 0.667em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  figure,
+  a {
+    width: 200px;
+    margin: 0;
+  }
+  img {
+    width: 100%;
+  }
+  text-align: left;
+}
+.main-copy {
+  margin: 0;
+}
 .thumbnail {
   width: 130px;
   height: 130px;
